@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap");
+/* font-family: 'Inconsolata'; */
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+/* font-family: 'Space Mono', monospace; */
+
+:root {
+  --color-primary: #333333;
+  --color-title: #4f4f4f;
+  --color-button: #ffffff;
+}
+
+body {
+  background: #ffffff;
+  font-family: "Space Mono", monospace;
+  font-style: normal;
+}
+
+.container {
+  width: 75.7%;
+  margin: 0 auto;
+}
+
+.header {
+  font-family: "Inconsolata";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  color: var(--color-primary);
+}
+
+.header-texts {
+  margin-top: 40px;
+  margin-bottom: 200px;
+}
+
+.hero-figure {
+  margin-right: 120px;
+}
+
+.hero-img {
+  max-width: 540px;
+}
+
+.hero-container {
+  display: flex;
+}
+
+.hero-title {
+  width: 586px;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 95px;
+  letter-spacing: -0.035em;
+  color: var(--color-primary);
+  margin-bottom: 36px;
+}
+
+.hero-subtitle {
+  width: 381px;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.035em;
+  color: var(--color-title);
+  margin-bottom: 64px;
+}
+
+.hero-button {
+  border: 0;
+  color: var(--color-button);
+  background-color: var(--color-title);
+  padding: 24px 43px 23px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+}
+
+/* Responsive design  */
+
+@media screen and (max-width: 375px) {
+  .hero-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
