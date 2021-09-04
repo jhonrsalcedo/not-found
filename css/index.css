@@ -67,6 +67,12 @@ body {
 }
 
 .hero-button {
+  font-family: inherit; /* For all browsers */
+  font-size: 100%; /* For all browsers */
+  margin: 0; /* Firefox and Safari have margin */
+  overflow: visible; /* Edge hides overflow */
+  -webkit-appearance: button; /* Safari otherwise prevents some styles */
+  cursor: pointer;
   border: 0;
   color: var(--color-button);
   background-color: var(--color-title);
@@ -78,11 +84,48 @@ body {
   text-transform: uppercase;
 }
 
+.hero-button:hover {
+  background-color: #222222;
+}
+
 /* Responsive design  */
 
 @media screen and (max-width: 375px) {
+  .container {
+    width: 90%;
+  }
+
   .hero-container {
     flex-direction: column;
     align-items: center;
+  }
+
+  .header-texts {
+    margin-bottom: 64px;
+  }
+
+  .hero-texts {
+    margin-bottom: 140px;
+  }
+
+  .hero-figure {
+    margin: 0 auto;
+  }
+
+  .hero-img {
+    width: 100%;
+  }
+
+  .hero-title {
+    width: 100%;
+    font-size: 48px;
+    line-height: 71px;
+    margin-top: 60px;
+  }
+
+  .hero-subtitle {
+    width: 100%;
+    font-size: 18px;
+    line-height: 27px;
   }
 }
